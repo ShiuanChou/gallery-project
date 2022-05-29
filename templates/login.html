@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+</head>
+
+<body>
+    <form action="." id="form1" name="form1" method="POST">
+        {% csrf_token %}
+        <table border="0" align="center" cellpadding="4" cellspacing="0">
+            <tr>
+                <td>
+                    <p>管理者帳號</p>
+                </td>
+                <td>
+                    <p>
+                        <input type="text" name="username" id="username" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>管理者密碼</p>
+                </td>
+                <td>
+                    <p>
+                        <input type="password" name="passwd" id="passwd" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <p>
+                        <input type="submit" name="button" id="button" value="登入" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
